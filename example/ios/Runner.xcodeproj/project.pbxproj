@@ -7,10 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115606B022BBC3D400913C3D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606AF22BBC3D400913C3D /* AdSupport.framework */; };
+		115606B222BBC3DC00913C3D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606B122BBC3DC00913C3D /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		115606B422BBC3EE00913C3D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606B322BBC3EE00913C3D /* libc++.tbd */; };
+		115606B622BBC3F600913C3D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606B522BBC3F600913C3D /* libz.tbd */; };
+		115606B822BBC3FE00913C3D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606B722BBC3FE00913C3D /* libsqlite3.tbd */; };
+		115606BA22BBC40400913C3D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606B922BBC40400913C3D /* Security.framework */; };
+		115606BC22BBC40B00913C3D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606BB22BBC40B00913C3D /* MobileCoreServices.framework */; };
+		115606BE22BBC41200913C3D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606BD22BBC41200913C3D /* SystemConfiguration.framework */; };
+		115606C022BBC41900913C3D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606BF22BBC41900913C3D /* CoreTelephony.framework */; };
+		115606C222BBC41E00913C3D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606C122BBC41E00913C3D /* AVFoundation.framework */; };
+		115606C422BBC42300913C3D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606C322BBC42300913C3D /* CoreLocation.framework */; };
+		115606C922BBC6C000913C3D /* GTExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606C722BBC6C000913C3D /* GTExtensionSDK.framework */; };
+		115606CA22BBC6C000913C3D /* GTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115606C822BBC6C000913C3D /* GTSDK.framework */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4625D34C17C2F5B79001EDC6 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C985DD5D1A492DD976CD08 /* Pods_Runner.framework */; };
 		6BC9247F223B81A3005B1FCC /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC9247E223B81A3005B1FCC /* PushKit.framework */; };
 		9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; };
 		9705A1C71CF904A300538489 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -20,7 +34,6 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
-		C8187BBF7C35F800A6A87D3A /* libPods-Runner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9065D88CB343FBAE17BE064 /* libPods-Runner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +52,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		115606AF22BBC3D400913C3D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		115606B122BBC3DC00913C3D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		115606B322BBC3EE00913C3D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		115606B522BBC3F600913C3D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		115606B722BBC3FE00913C3D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		115606B922BBC40400913C3D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		115606BB22BBC40B00913C3D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		115606BD22BBC41200913C3D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		115606BF22BBC41900913C3D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		115606C122BBC41E00913C3D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		115606C322BBC42300913C3D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		115606C722BBC6C000913C3D /* GTExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTExtensionSDK.framework; path = Frameworks/GTExtensionSDK.framework; sourceTree = "<group>"; };
+		115606C822BBC6C000913C3D /* GTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTSDK.framework; path = Frameworks/GTSDK.framework; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		2FE4449312A3B52CA0EA3B4A /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
@@ -60,7 +86,7 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9065D88CB343FBAE17BE064 /* libPods-Runner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Runner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C985DD5D1A492DD976CD08 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +94,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115606C422BBC42300913C3D /* CoreLocation.framework in Frameworks */,
+				115606C222BBC41E00913C3D /* AVFoundation.framework in Frameworks */,
+				115606C022BBC41900913C3D /* CoreTelephony.framework in Frameworks */,
+				115606BE22BBC41200913C3D /* SystemConfiguration.framework in Frameworks */,
+				115606BC22BBC40B00913C3D /* MobileCoreServices.framework in Frameworks */,
+				115606BA22BBC40400913C3D /* Security.framework in Frameworks */,
+				115606B822BBC3FE00913C3D /* libsqlite3.tbd in Frameworks */,
+				115606B622BBC3F600913C3D /* libz.tbd in Frameworks */,
+				115606B422BBC3EE00913C3D /* libc++.tbd in Frameworks */,
+				115606CA22BBC6C000913C3D /* GTSDK.framework in Frameworks */,
+				115606B222BBC3DC00913C3D /* UserNotifications.framework in Frameworks */,
+				115606B022BBC3D400913C3D /* AdSupport.framework in Frameworks */,
 				6BC9247F223B81A3005B1FCC /* PushKit.framework in Frameworks */,
 				9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */,
 				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
-				C8187BBF7C35F800A6A87D3A /* libPods-Runner.a in Frameworks */,
+				115606C922BBC6C000913C3D /* GTExtensionSDK.framework in Frameworks */,
+				4625D34C17C2F5B79001EDC6 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +187,21 @@
 		DF734CC14023A22FFAF220F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				115606C722BBC6C000913C3D /* GTExtensionSDK.framework */,
+				115606C822BBC6C000913C3D /* GTSDK.framework */,
+				115606C322BBC42300913C3D /* CoreLocation.framework */,
+				115606C122BBC41E00913C3D /* AVFoundation.framework */,
+				115606BF22BBC41900913C3D /* CoreTelephony.framework */,
+				115606BD22BBC41200913C3D /* SystemConfiguration.framework */,
+				115606BB22BBC40B00913C3D /* MobileCoreServices.framework */,
+				115606B922BBC40400913C3D /* Security.framework */,
+				115606B722BBC3FE00913C3D /* libsqlite3.tbd */,
+				115606B522BBC3F600913C3D /* libz.tbd */,
+				115606B322BBC3EE00913C3D /* libc++.tbd */,
+				115606B122BBC3DC00913C3D /* UserNotifications.framework */,
+				115606AF22BBC3D400913C3D /* AdSupport.framework */,
 				6BC9247E223B81A3005B1FCC /* PushKit.framework */,
-				E9065D88CB343FBAE17BE064 /* libPods-Runner.a */,
+				C3C985DD5D1A492DD976CD08 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,7 +242,6 @@
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3MJY223U56;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -260,15 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
 				"${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 			);
@@ -380,6 +427,12 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/getuiflut\"",
+					"\"${PODS_ROOT}/../.symlinks/flutter/ios\"",
+					"/Users/saharh/Documents/develop/wabi/plugins/getui-flutter-plugin/ios/GtSdkLib",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -388,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,11 +458,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 3MJY223U56;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"/Users/saharh/Documents/develop/wabi/plugins/getui-flutter-plugin/ios/GtSdkLib",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -419,7 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ent.com.getui.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Dev: ent.com.getui.demo";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Profile;
@@ -456,6 +511,12 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/getuiflut\"",
+					"\"${PODS_ROOT}/../.symlinks/flutter/ios\"",
+					"/Users/saharh/Documents/develop/wabi/plugins/getui-flutter-plugin/ios/GtSdkLib",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -470,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -510,6 +571,12 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/getuiflut\"",
+					"\"${PODS_ROOT}/../.symlinks/flutter/ios\"",
+					"/Users/saharh/Documents/develop/wabi/plugins/getui-flutter-plugin/ios/GtSdkLib",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -518,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,11 +602,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 3MJY223U56;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"/Users/saharh/Documents/develop/wabi/plugins/getui-flutter-plugin/ios/GtSdkLib",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -549,7 +618,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ent.com.getui.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Dev: ent.com.getui.demo";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -563,11 +632,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 3MJY223U56;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"/Users/saharh/Documents/develop/wabi/plugins/getui-flutter-plugin/ios/GtSdkLib",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -577,7 +648,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ent.com.getui.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Dev: ent.com.getui.demo";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
