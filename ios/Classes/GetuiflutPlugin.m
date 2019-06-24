@@ -28,13 +28,15 @@
 }
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
-  if ([@"getPlatformVersion" isEqualToString:call.method]) {
-    result([@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]]);
-  } else if([@"startSdk" isEqualToString:call.method]) {
-      [self startSdk:call result:result];
-  } else {
-    result(FlutterMethodNotImplemented);
-  }
+    if ([@"getPlatformVersion" isEqualToString:call.method]) {
+        result([@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]]);
+    } else if([@"getClientId" isEqualToString:call.method]) {
+        result([GeTuiSdk clientId]);
+    } else if([@"startSdk" isEqualToString:call.method]) {
+        [self startSdk:call result:result];
+    } else {
+        result(FlutterMethodNotImplemented);
+    }
 }
 
 - (void)startSdk:(FlutterMethodCall*)call result:(FlutterResult)result {
