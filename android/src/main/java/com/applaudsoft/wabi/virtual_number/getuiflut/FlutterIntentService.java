@@ -16,7 +16,6 @@ public class FlutterIntentService extends GTIntentService {
     @Override
     public void onReceiveServicePid(Context context, int pid) {
         Log.d(TAG, "onReceiveServicePid -> " + pid);
-
     }
 
     @Override
@@ -33,22 +32,25 @@ public class FlutterIntentService extends GTIntentService {
 
     @Override
     public void onReceiveClientId(Context context, String clientid) {
-        Log.e(TAG, "onReceiveClientId -> " + "clientid = " + clientid);
+        Log.d(TAG, "onReceiveClientId -> " + "clientid = " + clientid);
         GetuiflutPlugin.transmitMessageReceive(clientid, "onReceiveClientId");
     }
 
     @Override
     public void onReceiveOnlineState(Context context, boolean b) {
+        Log.d(TAG, "onReceiveOnlineState -> " + "b = " + b);
         GetuiflutPlugin.transmitMessageReceive(String.valueOf(b), "onReceiveOnlineState");
     }
 
     @Override
     public void onReceiveCommandResult(Context context, GTCmdMessage gtCmdMessage) {
+        Log.d(TAG, "onReceiveCommandResult -> " + "GTCmdMessage = " + gtCmdMessage.toString());
         GetuiflutPlugin.transmitMessageReceive(gtCmdMessage.toString(), "onReceiveCommandResult");
     }
 
     @Override
     public void onNotificationMessageArrived(Context context, GTNotificationMessage message) {
+        Log.d(TAG, "onNotificationMessageArrived");
         Log.d(TAG, "onNotificationMessageArrived -> " + "appid = " + message.getAppid() + "\ntaskid = " + message.getTaskId() + "\nmessageid = "
                 + message.getMessageId() + "\npkg = " + message.getPkgName() + "\ncid = " + message.getClientId() + "\ntitle = "
                 + message.getTitle() + "\ncontent = " + message.getContent());
@@ -62,6 +64,7 @@ public class FlutterIntentService extends GTIntentService {
 
     @Override
     public void onNotificationMessageClicked(Context context, GTNotificationMessage message) {
+        Log.d(TAG, "onNotificationMessageClicked");
         Log.d(TAG, "onNotificationMessageClicked -> " + "appid = " + message.getAppid() + "\ntaskid = " + message.getTaskId() + "\nmessageid = "
                 + message.getMessageId() + "\npkg = " + message.getPkgName() + "\ncid = " + message.getClientId() + "\ntitle = "
                 + message.getTitle() + "\ncontent = " + message.getContent());
