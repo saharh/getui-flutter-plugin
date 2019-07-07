@@ -1,4 +1,4 @@
-package com.getui.getuiflut;
+package com.applaudsoft.wabi.virtual_number;
 
 import android.content.Context;
 import android.util.Log;
@@ -20,12 +20,6 @@ public class FlutterIntentService extends GTIntentService {
     }
 
     @Override
-    public void onReceiveClientId(Context context, String clientid) {
-        Log.e(TAG, "onReceiveClientId -> " + "clientid = " + clientid);
-        GetuiflutPlugin.transmitMessageReceive(clientid, "onReceiveClientId");
-    }
-
-    @Override
     public void onReceiveMessageData(Context context, GTTransmitMessage msg) {
         Log.d(TAG, "onReceiveMessageData -> " + "appid = " + msg.getAppid() + "\ntaskid = " + msg.getTaskId() + "\nmessageid = " + msg.getMessageId() + "\npkg = " + msg.getPkgName()
                 + "\ncid = " + msg.getClientId() + "\npayload:" + new String(msg.getPayload()));
@@ -35,6 +29,12 @@ public class FlutterIntentService extends GTIntentService {
         payload.put("payloadId", msg.getPayloadId());
         payload.put("taskId", msg.getTaskId());
         GetuiflutPlugin.transmitMessageReceive(payload, "onReceiveMessageData");
+    }
+
+    @Override
+    public void onReceiveClientId(Context context, String clientid) {
+        Log.e(TAG, "onReceiveClientId -> " + "clientid = " + clientid);
+        GetuiflutPlugin.transmitMessageReceive(clientid, "onReceiveClientId");
     }
 
     @Override

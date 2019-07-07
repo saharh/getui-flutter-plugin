@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.getui.getuiflut">
+          package="com.applaudsoft.wabi.virtual_number">
     <!-- 个推 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
     <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
@@ -16,8 +16,8 @@
     <!--<uses-permission android:name="getui.permission.GetuiService.${applicationId}" />-->
 
     <!--<permission-->
-        <!--android:name="getui.permission.GetuiService.${applicationId}"-->
-        <!--android:protectionLevel="normal"></permission>-->
+    <!--android:name="getui.permission.GetuiService.${applicationId}"-->
+    <!--android:protectionLevel="normal"></permission>-->
 
     <!--&lt;!&ndash; 浮动通知权限 &ndash;&gt;-->
     <!--&lt;!&ndash;<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />&ndash;&gt;-->
@@ -32,8 +32,8 @@
     <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
 
     <!--<permission-->
-        <!--android:name="${applicationId}.permission.MIPUSH_RECEIVE"-->
-        <!--android:protectionLevel="signature" />-->
+    <!--android:name="${applicationId}.permission.MIPUSH_RECEIVE"-->
+    <!--android:protectionLevel="signature" />-->
     <!--<uses-permission android:name="${applicationId}.permission.MIPUSH_RECEIVE" />-->
 
     <!--&lt;!&ndash; 魅族 &ndash;&gt;-->
@@ -44,11 +44,11 @@
     <!--<uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />-->
 
     <!--<permission-->
-        <!--android:name="${applicationId}.push.permission.MESSAGE"-->
-        <!--android:protectionLevel="signature" />-->
+    <!--android:name="${applicationId}.push.permission.MESSAGE"-->
+    <!--android:protectionLevel="signature" />-->
     <!--<permission-->
-        <!--android:name="${applicationId}.permission.C2D_MESSAGE"-->
-        <!--android:protectionLevel="signature" />-->
+    <!--android:name="${applicationId}.permission.C2D_MESSAGE"-->
+    <!--android:protectionLevel="signature" />-->
 
     <!--&lt;!&ndash; 华为辅助 SDK &ndash;&gt;-->
     <!--&lt;!&ndash;HMS-SDK引导升级HMS功能，访问OTA服务器器需要⽹网络权限&ndash;&gt;-->
@@ -65,8 +65,8 @@
     <!--<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
     <!--&lt;!&ndash; 接收PUSH TOKEN的⼴广播以及PUSH消息需要定义该权限&ndash;&gt;-->
     <!--<permission-->
-        <!--android:name="${applicationId}.permission.PROCESS_PUSH_MSG"-->
-        <!--android:protectionLevel="signatureOrSystem" />-->
+    <!--android:name="${applicationId}.permission.PROCESS_PUSH_MSG"-->
+    <!--android:protectionLevel="signatureOrSystem" />-->
     <!--&lt;!&ndash;接收PUSH TOKEN的⼴广播以及PUSH消息需要定义该权限&ndash;&gt;-->
     <!--<uses-permission android:name="${applicationId}.permission.PROCESS_PUSH_MSG" />-->
 
@@ -77,248 +77,248 @@
     <!--&lt;!&ndash; VIVO &ndash;&gt;-->
     <!--<uses-permission android:name="android.permission.INTERNET" />-->
 
-    <application>
+    <application android:usesCleartextTraffic="true">
         <!--<meta-data-->
-            <!--android:name="PUSH_APPID"-->
-            <!--android:value="${GETUI_APP_ID}" />-->
+        <!--android:name="PUSH_APPID"-->
+        <!--android:value="${GETUI_APP_ID}" />-->
         <!--<meta-data-->
-            <!--android:name="PUSH_APPKEY"-->
-            <!--android:value="${GETUI_APP_KEY}" />-->
+        <!--android:name="PUSH_APPKEY"-->
+        <!--android:value="${GETUI_APP_KEY}" />-->
         <!--<meta-data-->
-            <!--android:name="PUSH_APPSECRET"-->
-            <!--android:value="${GETUI_APP_SECRET}" />-->
+        <!--android:name="PUSH_APPSECRET"-->
+        <!--android:value="${GETUI_APP_SECRET}" />-->
         <!--<meta-data-->
-            <!--android:name="MIPUSH_APPID"-->
-            <!--android:value="XM_${XIAOMI_APP_ID}" />-->
+        <!--android:name="MIPUSH_APPID"-->
+        <!--android:value="XM_${XIAOMI_APP_ID}" />-->
         <!--<meta-data-->
-            <!--android:name="MIPUSH_APPKEY"-->
-            <!--android:value="XM_${XIAOMI_APP_KEY}" />-->
+        <!--android:name="MIPUSH_APPKEY"-->
+        <!--android:value="XM_${XIAOMI_APP_KEY}" />-->
         <!--<meta-data-->
-            <!--android:name="MEIZUPUSH_APPID"-->
-            <!--android:value="MZ_${MEIZU_APP_ID}" />-->
+        <!--android:name="MEIZUPUSH_APPID"-->
+        <!--android:value="MZ_${MEIZU_APP_ID}" />-->
         <!--<meta-data-->
-            <!--android:name="MEIZUPUSH_APPKEY"-->
-            <!--android:value="MZ_${MEIZU_APP_KEY}" />-->
+        <!--android:name="MEIZUPUSH_APPKEY"-->
+        <!--android:value="MZ_${MEIZU_APP_KEY}" />-->
         <!--<meta-data-->
-            <!--android:name="com.huawei.hms.client.appid"-->
-            <!--android:value="${HUAWEI_APP_ID}" />-->
+        <!--android:name="com.huawei.hms.client.appid"-->
+        <!--android:value="${HUAWEI_APP_ID}" />-->
         <!--<meta-data-->
-            <!--android:name="OPPOPUSH_APPKEY"-->
-            <!--android:value="OP_${OPPO_APP_KEY}" />-->
+        <!--android:name="OPPOPUSH_APPKEY"-->
+        <!--android:value="OP_${OPPO_APP_KEY}" />-->
         <!--<meta-data-->
-            <!--android:name="OPPOPUSH_APPSECRET"-->
-            <!--android:value="OP_${OPPO_APP_SECRET}" />-->
+        <!--android:name="OPPOPUSH_APPSECRET"-->
+        <!--android:value="OP_${OPPO_APP_SECRET}" />-->
         <!--<meta-data-->
-            <!--android:name="com.vivo.push.app_id"-->
-            <!--android:value="${VIVO_APP_ID}" />-->
+        <!--android:name="com.vivo.push.app_id"-->
+        <!--android:value="${VIVO_APP_ID}" />-->
         <!--<meta-data-->
-            <!--android:name="com.vivo.push.api_key"-->
-            <!--android:value="${VIVO_APP_KEY}" />-->
+        <!--android:name="com.vivo.push.api_key"-->
+        <!--android:value="${VIVO_APP_KEY}" />-->
         <!-- 用户自定义服务继承自GTIntentService,作为SDK与APP桥梁服务,用来接收各种消息和命令回复 -->
         <service
-            android:name="com.getui.getuiflut.FlutterIntentService"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+            android:name=".FlutterIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
 
         <!-- 配置SDK核心服务 -->
         <service
-            android:name="com.getui.getuiflut.FlutterPushService"
+            android:name=".FlutterPushService"
             android:exported="true"
             android:label="PushService"
-            android:process=":pushservice" />
+            android:process=":pushservice"/>
         <!--<service-->
-            <!--android:name="com.igexin.sdk.PushService"-->
-            <!--android:exported="true"-->
-            <!--android:label="NotificationCenter"-->
-            <!--android:permission="android.permission.BIND_JOB_SERVICE"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.igexin.sdk.action.service.message" />-->
-            <!--</intent-filter>-->
+        <!--android:name="com.igexin.sdk.PushService"-->
+        <!--android:exported="true"-->
+        <!--android:label="NotificationCenter"-->
+        <!--android:permission="android.permission.BIND_JOB_SERVICE"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.igexin.sdk.action.service.message" />-->
+        <!--</intent-filter>-->
         <!--</service>-->
 
         <!--<receiver android:name="com.igexin.sdk.PushReceiver">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
-                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
-                <!--<action android:name="android.intent.action.USER_PRESENT" />-->
-                <!--<action android:name="com.igexin.sdk.action.refreshls" />-->
-                <!--<action android:name="android.intent.action.MEDIA_MOUNTED" />-->
-                <!--<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />-->
-                <!--<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />-->
-            <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--<action android:name="android.intent.action.USER_PRESENT" />-->
+        <!--<action android:name="com.igexin.sdk.action.refreshls" />-->
+        <!--<action android:name="android.intent.action.MEDIA_MOUNTED" />-->
+        <!--<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />-->
+        <!--<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
         <!--<activity-->
-            <!--android:name="com.igexin.sdk.PushActivity"-->
-            <!--android:excludeFromRecents="true"-->
-            <!--android:exported="false"-->
-            <!--android:process=":pushservice"-->
-            <!--android:taskAffinity="com.igexin.sdk.PushActivityTask"-->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!--android:name="com.igexin.sdk.PushActivity"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="false"-->
+        <!--android:process=":pushservice"-->
+        <!--android:taskAffinity="com.igexin.sdk.PushActivityTask"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
         <!--<activity-->
-            <!--android:name="com.igexin.sdk.GActivity"-->
-            <!--android:excludeFromRecents="true"-->
-            <!--android:exported="true"-->
-            <!--android:process=":pushservice"-->
-            <!--android:taskAffinity="com.igexin.sdk.PushActivityTask"-->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!--android:name="com.igexin.sdk.GActivity"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="true"-->
+        <!--android:process=":pushservice"-->
+        <!--android:taskAffinity="com.igexin.sdk.PushActivityTask"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
 
         <!--&lt;!&ndash; meizu push &ndash;&gt;-->
         <!--<service-->
-            <!--android:name="com.meizu.cloud.pushsdk.NotificationService"-->
-            <!--android:exported="true"-->
-            <!--android:process=":pushservice" />-->
+        <!--android:name="com.meizu.cloud.pushsdk.NotificationService"-->
+        <!--android:exported="true"-->
+        <!--android:process=":pushservice" />-->
 
         <!--<receiver-->
-            <!--android:name="com.meizu.cloud.pushsdk.SystemReceiver"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.meizu.cloud.pushservice.action.PUSH_SERVICE_START" />-->
+        <!--android:name="com.meizu.cloud.pushsdk.SystemReceiver"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.meizu.cloud.pushservice.action.PUSH_SERVICE_START" />-->
 
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
         <!--<receiver-->
-            <!--android:name="com.igexin.sdk.FlymePushReceiver"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
+        <!--android:name="com.igexin.sdk.FlymePushReceiver"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
 
-                <!--&lt;!&ndash; 接收push消息 &ndash;&gt;-->
-                <!--<action android:name="com.meizu.flyme.push.intent.MESSAGE" />-->
-                <!--&lt;!&ndash; 接收register消息 &ndash;&gt;-->
-                <!--<action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />-->
-                <!--&lt;!&ndash; 接收unregister消息 &ndash;&gt;-->
-                <!--<action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />-->
-                <!--&lt;!&ndash; 兼容低版本Flyme3推送服务配置 &ndash;&gt;-->
-                <!--<action android:name="com.meizu.c2dm.intent.REGISTRATION" />-->
-                <!--<action android:name="com.meizu.c2dm.intent.RECEIVE" />-->
+        <!--&lt;!&ndash; 接收push消息 &ndash;&gt;-->
+        <!--<action android:name="com.meizu.flyme.push.intent.MESSAGE" />-->
+        <!--&lt;!&ndash; 接收register消息 &ndash;&gt;-->
+        <!--<action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />-->
+        <!--&lt;!&ndash; 接收unregister消息 &ndash;&gt;-->
+        <!--<action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />-->
+        <!--&lt;!&ndash; 兼容低版本Flyme3推送服务配置 &ndash;&gt;-->
+        <!--<action android:name="com.meizu.c2dm.intent.REGISTRATION" />-->
+        <!--<action android:name="com.meizu.c2dm.intent.RECEIVE" />-->
 
-                <!--<category android:name="${applicationId}" />-->
-            <!--</intent-filter>-->
+        <!--<category android:name="${applicationId}" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
 
         <!--&lt;!&ndash; mipush &ndash;&gt;-->
         <!--<service-->
-            <!--android:name="com.xiaomi.mipush.sdk.PushMessageHandler"-->
-            <!--android:enabled="true"-->
-            <!--android:exported="true"-->
-            <!--android:process=":pushservice" />-->
+        <!--android:name="com.xiaomi.mipush.sdk.PushMessageHandler"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="true"-->
+        <!--android:process=":pushservice" />-->
         <!--<service-->
-            <!--android:name="com.xiaomi.mipush.sdk.MessageHandleService"-->
-            <!--android:enabled="true"-->
-            <!--android:process=":pushservice" />-->
+        <!--android:name="com.xiaomi.mipush.sdk.MessageHandleService"-->
+        <!--android:enabled="true"-->
+        <!--android:process=":pushservice" />-->
 
         <!--<receiver-->
-            <!--android:name="com.igexin.sdk.MiuiPushReceiver"-->
-            <!--android:exported="true"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />-->
-            <!--</intent-filter>-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />-->
-            <!--</intent-filter>-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.xiaomi.mipush.ERROR" />-->
-            <!--</intent-filter>-->
+        <!--android:name="com.igexin.sdk.MiuiPushReceiver"-->
+        <!--android:exported="true"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.xiaomi.mipush.ERROR" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
 
         <!--&lt;!&ndash; hmspush &ndash;&gt;-->
         <!--<activity-->
-            <!--android:name="com.huawei.android.hms.agent.common.HMSAgentActivity"-->
-            <!--android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"-->
-            <!--android:excludeFromRecents="true"-->
-            <!--android:exported="false"-->
-            <!--android:hardwareAccelerated="true"-->
-            <!--android:process=":pushservice"-->
-            <!--android:theme="@android:style/Theme.Translucent">-->
-            <!--<meta-data-->
-                <!--android:name="hwc-theme"-->
-                <!--android:value="androidhwext:style/Theme.Emui.Translucent" />-->
+        <!--android:name="com.huawei.android.hms.agent.common.HMSAgentActivity"-->
+        <!--android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="false"-->
+        <!--android:hardwareAccelerated="true"-->
+        <!--android:process=":pushservice"-->
+        <!--android:theme="@android:style/Theme.Translucent">-->
+        <!--<meta-data-->
+        <!--android:name="hwc-theme"-->
+        <!--android:value="androidhwext:style/Theme.Emui.Translucent" />-->
         <!--</activity>-->
 
         <!--<activity-->
-            <!--android:name="com.huawei.hms.activity.BridgeActivity"-->
-            <!--android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"-->
-            <!--android:excludeFromRecents="true"-->
-            <!--android:exported="false"-->
-            <!--android:hardwareAccelerated="true"-->
-            <!--android:process=":pushservice"-->
-            <!--android:theme="@android:style/Theme.Translucent">-->
-            <!--<meta-data-->
-                <!--android:name="hwc-theme"-->
-                <!--android:value="androidhwext:style/Theme.Emui.Translucent" />-->
+        <!--android:name="com.huawei.hms.activity.BridgeActivity"-->
+        <!--android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="false"-->
+        <!--android:hardwareAccelerated="true"-->
+        <!--android:process=":pushservice"-->
+        <!--android:theme="@android:style/Theme.Translucent">-->
+        <!--<meta-data-->
+        <!--android:name="hwc-theme"-->
+        <!--android:value="androidhwext:style/Theme.Emui.Translucent" />-->
         <!--</activity>-->
 
         <!--<provider-->
-            <!--android:name="com.huawei.hms.update.provider.UpdateProvider"-->
-            <!--android:authorities="${applicationId}.hms.update.provider"-->
-            <!--android:exported="false"-->
-            <!--android:grantUriPermissions="true"-->
-            <!--android:process=":pushservice"></provider>-->
+        <!--android:name="com.huawei.hms.update.provider.UpdateProvider"-->
+        <!--android:authorities="${applicationId}.hms.update.provider"-->
+        <!--android:exported="false"-->
+        <!--android:grantUriPermissions="true"-->
+        <!--android:process=":pushservice"></provider>-->
 
         <!--<receiver-->
-            <!--android:name="com.igexin.sdk.HmsPushReceiver"-->
-            <!--android:permission="${applicationId}.permission.PROCESS_PUSH_MSG"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
-                <!--&lt;!&ndash; 必须,⽤用于接收token &ndash;&gt;-->
-                <!--<action android:name="com.huawei.android.push.intent.REGISTRATION" />-->
-                <!--&lt;!&ndash; 必须，⽤用于接收消息 &ndash;&gt;-->
-                <!--<action android:name="com.huawei.android.push.intent.RECEIVE" />-->
-                <!--&lt;!&ndash; 必须, ⽤用于接收通知栏消息点击事件 此事件不不需要开发者处理理，只需注册就可以&ndash;&gt;-->
-                <!--<action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />-->
-            <!--</intent-filter>-->
+        <!--android:name="com.igexin.sdk.HmsPushReceiver"-->
+        <!--android:permission="${applicationId}.permission.PROCESS_PUSH_MSG"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
+        <!--&lt;!&ndash; 必须,⽤用于接收token &ndash;&gt;-->
+        <!--<action android:name="com.huawei.android.push.intent.REGISTRATION" />-->
+        <!--&lt;!&ndash; 必须，⽤用于接收消息 &ndash;&gt;-->
+        <!--<action android:name="com.huawei.android.push.intent.RECEIVE" />-->
+        <!--&lt;!&ndash; 必须, ⽤用于接收通知栏消息点击事件 此事件不不需要开发者处理理，只需注册就可以&ndash;&gt;-->
+        <!--<action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
         <!--<receiver-->
-            <!--android:name="com.igexin.sdk.HmsPushSubReceiver"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
+        <!--android:name="com.igexin.sdk.HmsPushSubReceiver"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
 
-                <!--&lt;!&ndash; 可选，⽤用于点击通知栏或通知栏上的按钮后触发onEvent回调 &ndash;&gt;-->
-                <!--<action android:name="com.huawei.android.push.intent.CLICK" />-->
-                <!--&lt;!&ndash; 可选，查看push通道是否连接，不不查看则不不需要 &ndash;&gt;-->
-                <!--<action android:name="com.huawei.intent.action.PUSH_STATE" />-->
-            <!--</intent-filter>-->
+        <!--&lt;!&ndash; 可选，⽤用于点击通知栏或通知栏上的按钮后触发onEvent回调 &ndash;&gt;-->
+        <!--<action android:name="com.huawei.android.push.intent.CLICK" />-->
+        <!--&lt;!&ndash; 可选，查看push通道是否连接，不不查看则不不需要 &ndash;&gt;-->
+        <!--<action android:name="com.huawei.intent.action.PUSH_STATE" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
         <!--&lt;!&ndash;接⼊入HMSSDK PUSH模块需要注册该service，不不需要开发者处理理&ndash;&gt;-->
         <!--<service-->
-            <!--android:name="com.huawei.hms.support.api.push.service.HmsMsgService"-->
-            <!--android:enabled="true"-->
-            <!--android:exported="true"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.huawei.push.msg.NOTIFY_MSG" />-->
-                <!--<action android:name="com.huawei.push.msg.PASSBY_MSG" />-->
-            <!--</intent-filter>-->
+        <!--android:name="com.huawei.hms.support.api.push.service.HmsMsgService"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="true"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.huawei.push.msg.NOTIFY_MSG" />-->
+        <!--<action android:name="com.huawei.push.msg.PASSBY_MSG" />-->
+        <!--</intent-filter>-->
         <!--</service>-->
 
         <!--&lt;!&ndash; oppopush &ndash;&gt;-->
         <!--<service-->
-            <!--android:name="com.igexin.sdk.OppoPushService"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />-->
-            <!--</intent-filter>-->
+        <!--android:name="com.igexin.sdk.OppoPushService"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />-->
+        <!--</intent-filter>-->
         <!--</service>-->
 
         <!--&lt;!&ndash; vivopush &ndash;&gt;-->
         <!--<service-->
-            <!--android:name="com.vivo.push.sdk.service.CommandClientService"-->
-            <!--android:exported="true"-->
-            <!--android:process=":pushservice" />-->
+        <!--android:name="com.vivo.push.sdk.service.CommandClientService"-->
+        <!--android:exported="true"-->
+        <!--android:process=":pushservice" />-->
         <!--<activity-->
-            <!--android:name="com.vivo.push.sdk.LinkProxyClientActivity"-->
-            <!--android:exported="true"-->
-            <!--android:process=":pushservice"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!--android:name="com.vivo.push.sdk.LinkProxyClientActivity"-->
+        <!--android:exported="true"-->
+        <!--android:process=":pushservice"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
         <!--<receiver-->
-            <!--android:name="com.igexin.sdk.VivoPushMessageReceiver"-->
-            <!--android:process=":pushservice">-->
-            <!--<intent-filter>-->
-                <!--&lt;!&ndash; 接收 push 消息 &ndash;&gt;-->
-                <!--<action android:name="com.vivo.pushclient.action.RECEIVE" />-->
-            <!--</intent-filter>-->
+        <!--android:name="com.igexin.sdk.VivoPushMessageReceiver"-->
+        <!--android:process=":pushservice">-->
+        <!--<intent-filter>-->
+        <!--&lt;!&ndash; 接收 push 消息 &ndash;&gt;-->
+        <!--<action android:name="com.vivo.pushclient.action.RECEIVE" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
     </application>
 </manifest>
