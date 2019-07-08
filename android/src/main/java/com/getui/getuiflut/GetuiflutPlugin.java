@@ -45,7 +45,7 @@ public class GetuiflutPlugin implements MethodCallHandler {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
     } else if (call.method.equals("initGetuiPush")) {
       initGtSdk();
-    } else if (call.method.equals("status")) {
+    } else if (call.method.equals("isPushTurnedOn")) {
       result.success(isPushTurnedOn());
     } else if (call.method.equals("getClientId")) {
       result.success(getClientId());
