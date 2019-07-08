@@ -1,6 +1,7 @@
 package com.getui.getuiflut;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 import com.igexin.sdk.GTIntentService;
@@ -12,11 +13,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FlutterIntentService extends GTIntentService {
+    @Override
+    public void onCreate() {
+        Log.d(TAG, "onCreate");
+        super.onCreate();
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int i, int i1) {
+        Log.d(TAG, "onStartCommand");
+        return super.onStartCommand(intent, i, i1);
+    }
 
     @Override
     public void onReceiveServicePid(Context context, int pid) {
         Log.d(TAG, "onReceiveServicePid -> " + pid);
-
     }
 
     @Override
@@ -39,11 +50,13 @@ public class FlutterIntentService extends GTIntentService {
 
     @Override
     public void onReceiveOnlineState(Context context, boolean b) {
+        Log.d(TAG, "onReceiveOnlineState -> " + (b ? "online" : "offline"));
         GetuiflutPlugin.transmitMessageReceive(String.valueOf(b), "onReceiveOnlineState");
     }
 
     @Override
     public void onReceiveCommandResult(Context context, GTCmdMessage gtCmdMessage) {
+        Log.d(TAG, "onReceiveCommandResult -> " + gtCmdMessage.toString());
         GetuiflutPlugin.transmitMessageReceive(gtCmdMessage.toString(), "onReceiveCommandResult");
     }
 
@@ -53,10 +66,10 @@ public class FlutterIntentService extends GTIntentService {
                 + message.getMessageId() + "\npkg = " + message.getPkgName() + "\ncid = " + message.getClientId() + "\ntitle = "
                 + message.getTitle() + "\ncontent = " + message.getContent());
         Map<String, Object> notification = new HashMap<String, Object>();
-        notification.put("messageId",message.getMessageId());
-        notification.put("taskId",message.getTaskId());
-        notification.put("title",message.getTitle());
-        notification.put("content",message.getContent());
+        notification.put("messageId", message.getMessageId());
+        notification.put("taskId", message.getTaskId());
+        notification.put("title", message.getTitle());
+        notification.put("content", message.getContent());
         GetuiflutPlugin.transmitMessageReceive(notification, "onNotificationMessageArrived");
     }
 
@@ -66,10 +79,16 @@ public class FlutterIntentService extends GTIntentService {
                 + message.getMessageId() + "\npkg = " + message.getPkgName() + "\ncid = " + message.getClientId() + "\ntitle = "
                 + message.getTitle() + "\ncontent = " + message.getContent());
         Map<String, Object> notification = new HashMap<String, Object>();
-        notification.put("messageId",message.getMessageId());
-        notification.put("taskId",message.getTaskId());
-        notification.put("title",message.getTitle());
-        notification.put("content",message.getContent());
+        notification.put("messageId", message.getMessageId());
+        notification.put("taskId", message.getTaskId());
+        notification.put("title", message.getTitle());
+        notification.put("content", message.getContent());
         GetuiflutPlugin.transmitMessageReceive(notification, "onNotificationMessageClicked");
+    }
+
+    @Override
+    public void onDestroy() {
+        Log.d(TAG, "onDestroy");
+        super.onDestroy();
     }
 }
