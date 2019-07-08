@@ -72,6 +72,7 @@ public class GetuiflutPlugin implements MethodCallHandler {
 
   private boolean isPushTurnedOn() {
     boolean turnedOn = PushManager.getInstance().isPushTurnedOn(registrar.context());
+    PushManager.getInstance().registerPushIntentService(registrar.context(), FlutterIntentService.class);
     Log.d(TAG, "push service status: " + turnedOn);
     return turnedOn;
   }
