@@ -43,6 +43,10 @@ class Getuiflut {
     return cid;
   }
 
+  Future<bool> isPushTurnedOn() async {
+    return await _channel.invokeMethod('isPushTurnedOn');
+  }
+
   void resumePush() {
     _channel.invokeMethod('resume');
   }
