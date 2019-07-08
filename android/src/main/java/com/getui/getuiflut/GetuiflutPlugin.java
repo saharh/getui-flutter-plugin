@@ -45,8 +45,9 @@ public class GetuiflutPlugin implements MethodCallHandler {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
     } else if (call.method.equals("initGetuiPush")) {
       initGtSdk();
-    } else if (call.method.equals("isPushTurnedOn")) {
-      result.success(isPushTurnedOn());
+    } else if (call.method.equals("registerPushService")) {
+      registerPushService();
+      result.success(null);
     } else if (call.method.equals("getClientId")) {
       result.success(getClientId());
     } else if (call.method.equals("resume")) {
@@ -70,11 +71,8 @@ public class GetuiflutPlugin implements MethodCallHandler {
     return PushManager.getInstance().getClientid(registrar.context());
   }
 
-  private boolean isPushTurnedOn() {
-    boolean turnedOn = PushManager.getInstance().isPushTurnedOn(registrar.context());
+  private void registerPushService() {
     PushManager.getInstance().registerPushIntentService(registrar.context(), FlutterIntentService.class);
-    Log.d(TAG, "push service status: " + turnedOn);
-    return turnedOn;
   }
 
   private void resume() {

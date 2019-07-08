@@ -1,11 +1,11 @@
 import 'dart:async';
+
 import 'package:flutter/services.dart';
 
 typedef Future<dynamic> EventHandler(String res);
 typedef Future<dynamic> EventHandlerMap(Map<String, dynamic> event);
 
 class Getuiflut {
-
   static const MethodChannel _channel = const MethodChannel('getuiflut');
 
   EventHandler _onReceiveClientId;
@@ -13,20 +13,23 @@ class Getuiflut {
   EventHandlerMap _onNotificationMessageArrived;
   EventHandlerMap _onNotificationMessageClicked;
 
-
   // deviceToken
   EventHandler _onRegisterDeviceToken;
+
   // voipToken
   EventHandler _onRegisterVoipToken;
+
   //  iOS收到的透传内容
   EventHandler _onReceivePayload;
+
   // ios 收到APNS消息
   EventHandlerMap _onReceiveNotificationResponse;
+
   // ios 收到AppLink消息
   EventHandler _onAppLinkPayload;
+
   // ios 收到VOIP消息
   EventHandlerMap _onReceiveVoipPayLoad;
-
 
   static Future<String> get platformVersion async {
     final String version = await _channel.invokeMethod('getPlatformVersion');
@@ -43,8 +46,8 @@ class Getuiflut {
     return cid;
   }
 
-  Future<bool> isPushTurnedOn() async {
-    return await _channel.invokeMethod('isPushTurnedOn');
+  Future<bool> registerPushService() async {
+    return await _channel.invokeMethod('registerPushService');
   }
 
   void resumePush() {
@@ -61,7 +64,6 @@ class Getuiflut {
     EventHandlerMap onNotificationMessageArrived,
     EventHandlerMap onNotificationMessageClicked,
 
-
     //deviceToken
     EventHandler onRegisterDeviceToken,
     //voipToken
@@ -74,7 +76,7 @@ class Getuiflut {
     EventHandler onAppLinkPayload,
     // ios 收到VOIP消息
     EventHandlerMap onReceiveVoipPayLoad,
-  }){
+  }) {
     _onReceiveClientId = onReceiveClientId;
     _onRegisterDeviceToken = onRegisterDeviceToken;
     _onRegisterVoipToken = onRegisterVoipToken;
@@ -90,7 +92,7 @@ class Getuiflut {
   }
 
   Future<Null> _handleMethod(MethodCall call) async {
-    switch(call.method) {
+    switch (call.method) {
       case "onReceiveClientId":
         print('onReceiveClientId' + call.arguments);
         return _onReceiveClientId(call.arguments);
@@ -124,11 +126,7 @@ class Getuiflut {
     String appId,
     String appKey,
     String appSecret,
-
   }) {
-    _channel.invokeMethod('startSdk',{'appId':appId, 'appKey':appKey, 'appSecret':appSecret});
+    _channel.invokeMethod('startSdk', {'appId': appId, 'appKey': appKey, 'appSecret': appSecret});
   }
-
-
-
 }
