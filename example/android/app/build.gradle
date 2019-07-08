@@ -40,19 +40,19 @@ android {
                 GETUI_APP_ID    : "",
                 GETUI_APP_KEY   : "",
                 GETUI_APP_SECRET: "",
+
+                OPPO_APP_KEY    : "",
+                OPPO_APP_SECRET : "",
+                VIVO_APP_ID     : "",
+                VIVO_APP_KEY    : "",
+
                 XIAOMI_APP_ID   : "",
                 XIAOMI_APP_KEY  : "",
 
                 MEIZU_APP_ID    : "",
                 MEIZU_APP_KEY   : "",
 
-                HUAWEI_APP_ID   : "",
-
-                OPPO_APP_KEY   : "",
-                OPPO_APP_SECRET  : "",
-
-                VIVO_APP_ID   : "",
-                VIVO_APP_KEY  : ""
+                HUAWEI_APP_ID   : ""
         ]
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
