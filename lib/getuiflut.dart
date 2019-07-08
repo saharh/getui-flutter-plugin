@@ -46,8 +46,8 @@ class Getuiflut {
     return cid;
   }
 
-  Future<bool> registerPushService() async {
-    return await _channel.invokeMethod('registerPushService');
+  Future<void> registerPushService() async {
+    await _channel.invokeMethod('registerPushService');
   }
 
   void resumePush() {
