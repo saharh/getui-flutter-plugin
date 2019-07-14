@@ -33,7 +33,7 @@ public class FlutterIntentService extends GTIntentService {
     @Override
     public void onReceiveClientId(Context context, String clientid) {
         Log.e(TAG, "onReceiveClientId -> " + "clientid = " + clientid);
-        GetuiflutPlugin.transmitMessageReceive(clientid, "onReceiveClientId");
+        GetuiflutPlugin.instance.transmitMessageReceive(clientid, "onReceiveClientId");
     }
 
     @Override
@@ -45,19 +45,19 @@ public class FlutterIntentService extends GTIntentService {
         payload.put("payload", new String(msg.getPayload()));
         payload.put("payloadId", msg.getPayloadId());
         payload.put("taskId", msg.getTaskId());
-        GetuiflutPlugin.transmitMessageReceive(payload, "onReceiveMessageData");
+        GetuiflutPlugin.instance.transmitMessageReceive(payload, "onReceiveMessageData");
     }
 
     @Override
     public void onReceiveOnlineState(Context context, boolean b) {
         Log.d(TAG, "onReceiveOnlineState -> " + (b ? "online" : "offline"));
-        GetuiflutPlugin.transmitMessageReceive(String.valueOf(b), "onReceiveOnlineState");
+        GetuiflutPlugin.instance.transmitMessageReceive(String.valueOf(b), "onReceiveOnlineState");
     }
 
     @Override
     public void onReceiveCommandResult(Context context, GTCmdMessage gtCmdMessage) {
         Log.d(TAG, "onReceiveCommandResult -> " + gtCmdMessage.toString());
-        GetuiflutPlugin.transmitMessageReceive(gtCmdMessage.toString(), "onReceiveCommandResult");
+        GetuiflutPlugin.instance.transmitMessageReceive(gtCmdMessage.toString(), "onReceiveCommandResult");
     }
 
     @Override
@@ -70,7 +70,7 @@ public class FlutterIntentService extends GTIntentService {
         notification.put("taskId", message.getTaskId());
         notification.put("title", message.getTitle());
         notification.put("content", message.getContent());
-        GetuiflutPlugin.transmitMessageReceive(notification, "onNotificationMessageArrived");
+        GetuiflutPlugin.instance.transmitMessageReceive(notification, "onNotificationMessageArrived");
     }
 
     @Override
@@ -83,7 +83,7 @@ public class FlutterIntentService extends GTIntentService {
         notification.put("taskId", message.getTaskId());
         notification.put("title", message.getTitle());
         notification.put("content", message.getContent());
-        GetuiflutPlugin.transmitMessageReceive(notification, "onNotificationMessageClicked");
+        GetuiflutPlugin.instance.transmitMessageReceive(notification, "onNotificationMessageClicked");
     }
 
     @Override
