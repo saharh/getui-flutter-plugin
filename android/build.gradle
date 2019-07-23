@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.android.tools.build:gradle:3.4.2'
     }
 }
 rootProject.allprojects {
@@ -39,8 +39,8 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.getui:sdk:2.13.2.5'
 //    implementation 'com.getui:sdk-for-google-play:4.3.5.0'
-    implementation 'com.assist:oppo:1.0.2'
-    implementation 'com.assist:vivo:1.0.1'
+    implementation 'com.assist:oppo:1.0.3'
+    implementation 'com.assist:vivo:1.0.3'
     implementation 'com.getui:hwp:1.0.5'
     implementation 'com.getui:mzp:1.0.7'
     implementation 'com.getui:xmp:1.0.4'
