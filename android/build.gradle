@@ -13,10 +13,10 @@ buildscript {
 rootProject.allprojects {
     repositories {
         //Maven URL地址
-        flatDir {
-            dirs 'libs'
-            dirs project(':getuiflut').file('libs')
-        }
+//        flatDir {
+//            dirs 'libs'
+//            dirs project(':getuiflut').file('libs')
+//        }
         maven {
             url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/"
         }
@@ -48,5 +48,5 @@ dependencies {
 //    implementation 'com.getui:hwp:1.0.6'
     implementation 'com.getui:mzp:1.0.7'
     implementation 'com.getui:xmp:1.0.5'
-    implementation(name: 'hwp-1.0.6-mod', ext: 'aar')
+//    implementation(name: 'hwp-1.0.6-mod', ext: 'aar')
 }
